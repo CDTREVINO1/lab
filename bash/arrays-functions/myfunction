@@ -1,0 +1,12 @@
+#!/bin/bash
+
+my_function() {
+    local name="Changed"
+    # name="Changed"
+    echo "Inside: $name"
+}
+
+name="Original"
+my_function
+echo "$name"
+# Changed (oops!)

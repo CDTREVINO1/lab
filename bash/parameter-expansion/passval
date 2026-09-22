@@ -1,0 +1,11 @@
+#!/bin/bash
+
+password="secret"
+echo "Length: ${#password}"
+
+# password validation
+# the # before the password variable expands the variable into the amount of characters the variable has.
+if [[ ${#password} -lt 8 ]]; then
+	echo "Password too short"
+	exit 1
+fi
